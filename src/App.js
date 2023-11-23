@@ -17,7 +17,7 @@ export const App = () =>{
 
   return(
     <div className="flex justify-center items-center mx-auto mt-24 ">
-      <div className="bg-white w-144 h-full p-10 rounded-2xl">
+      <div className="bg-white w-144 h-full p-10 rounded-2xl sm:w-110 xs:w-96">
         
         <AddToDo
           sendFormInfo={formItem => setTaskList([...taskList, formItem])}

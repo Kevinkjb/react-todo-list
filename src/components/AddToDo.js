@@ -31,14 +31,14 @@ export const AddToDo = ({sendFormInfo}) =>{
   let currentMonth = month[months]
 
   return(
-    <div className='relative h-32'>
-      <div className='flex justify-between items-center  rounded-full bg-white px-10 mt-5'>
+    <div className='relative h-32 w-110 sm:w-96 xs:w-80 mx-auto'>
+      <div className='flex justify-between items-center  rounded-full  px-10 mt-5 w-120 sm:w-96 xs:w-80'>
           <h2 className="text-left text-xl font-medium text-gray-600">{currentDay}, {currentNumberOfDays} {currentMonth}</h2>
           <GoPlus className=' bg-blue-500 border-none  rounded-full text-white h-10 w-10 cursor-pointer' onClick={()=>setShowInfo(!showInfo)}/>
       </div>
       {
         showInfo && 
-        <div className='mt-2 flex justify-center items-center'>
+        <div className='mt-5 flex justify-center items-center'>
         <input type="text" 
           onChange={handleInputChanges}
           value={formData.taskList}
